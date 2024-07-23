@@ -1,0 +1,160 @@
+
+body{
+  background: rgba(0, 0, 0 ,90%) none repeat scroll 0 0; 
+}
+.btn,.bft{
+  background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+  transition: 0.5s ease ;
+  
+}
+
+.colletion{
+  background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0
+}
+.fcs a:hover, .btn:hover{
+   background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+}
+
+.left1{
+  left:100%;
+  overflow: hidden;
+}
+.left2{
+  left:200%;
+  overflow: hidden;
+}
+.left3{
+  left:300%;
+  overflow: hidden;
+}
+.bg{
+  background: rgba(255, 255, 255, 0.4) none repeat scroll 0 0;
+  
+}
+.bg-color{
+  background-color: #5c5c5cd1;
+}
+.btn{
+  background-color: #f6f4f438;
+}
+.pointer{
+  cursor: pointer;
+  
+}
+.pointer:hover{
+  color: white;
+}
+.color{
+  color: rgb(190 183 183);
+}
+.ff{
+  font-family: fangsong;
+}
+.border{
+  border: 2px solid white;
+}
+#bgv{
+  
+  background-image: url('/img/main/woman-seaside-view.jpg');
+  height: 800px; 
+  background-blend-mode: luminosity;
+}
+.height{
+   height: 702px;
+} 
+.sd{
+  height: 529px;
+}
+.mt{
+  background-image: url('img/store/clothing-store.jpg');
+  
+  background-blend-mode: luminosity;
+}
+ @media (min-width: 624px) {
+  .md{
+      
+      background-blend-mode: luminosity;
+  }
+} 
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel-item {
+  flex: 0 0 auto;
+  width: 20%;
+  margin-right: 16px;
+}
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.select::selection{
+  user-select: none;
+}
+
+
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 40rem;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease, opacity 1s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.slide:not(.active) {
+  transform: translateX(100%);
+}
+
+.width{
+  width: 149px;
+  
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cart-bg{
+  background-color: rgb(63 66 71 / 79%);
+}
+.scrollable-div::-webkit-scrollbar {
+  width: 12px; /* Width of the entire scrollbar */
+}
+
+.scrollable-div::-webkit-scrollbar-track {
+  background: #1d1c1c; /* Color of the scrollbar track */
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 20px; /* Rounded corners */
+  border: 0px solid #f1f1f1; /* Padding around the scrollbar thumb */
+}
+
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Hover color of the scrollbar thumb */
+}
