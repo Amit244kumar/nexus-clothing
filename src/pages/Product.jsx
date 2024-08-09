@@ -17,6 +17,7 @@ function Product() {
     const status=useSelector(state=>state.auth.status)
     const userData=useSelector(state=>state.auth.userData)
     const cartData=useSelector(state=>state.auth.cartData)   
+    console.log(card)
     const incremet=()=>{
         if(quantity>=1 && quantity<8){
             setQuantity(quantity+1)
@@ -99,13 +100,13 @@ function Product() {
             </div>
             <div  className='sm:p-3 sm:m-3 p-1'>
                 <p className='font-normal font-serif'>Available in stock</p>
-                <p className='font-normal font-serif'>Product type: <span className='font-bold'> {card.productType}</span></p>
-                <p className='font-normal font-serif'>{card.description}</p>
+                <p className='font-normal font-serif'>Product type: <span className='font-bold text-gray-300'> {card.productType}</span></p>
+                <p className='font-normal font-serif text-gray-300'>{card.description}</p>
 
             </div>
             <div className='sm:p-3 sm:m-3 p-1'>
                  <p className='font-normal text-lg font-serif'>Product description</p>
-                 <p className='font-normal '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi adipisci voluptatem voluptas ipsa aspernatur quisquam nam aperiam rerum, accusantium aut ea laboriosam veritatis maxime ipsum harum? Commodi quia officiis ea.</p>
+                 <p className='font-normal text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi adipisci voluptatem voluptas ipsa aspernatur quisquam nam aperiam rerum, accusantium aut ea laboriosam veritatis maxime ipsum harum? Commodi quia officiis ea.</p>
             </div>
             <div className='sm:p-3 sm:m-3 p-1'>
                 <h1 className='font-normal text-xl '>Rs {card.price}</h1>

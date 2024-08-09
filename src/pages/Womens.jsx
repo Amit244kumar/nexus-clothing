@@ -10,26 +10,26 @@ import service from '../appwriteConfig/addToCartConfig';
 import {slides,category,price,clothes} from '../clothsCatogaries'
 
 var randomClothes=[
-    {id:8,description:"Lorem ipsum dolor sit amet.",image:"img/womens/summer/crop-top/summer-girl-portrait-greens-young.jpg",price:500,rating:3,title:"white half top"}
-   ,{id:5,description:"light weight top for summer",image:"img/womens/summer/crop-top/medium-shot-smiley-woman-wearing-hat_23-2149512428.avif",price:800,rating:4,title:"blue full top"}
-   ,{id:2,description:"light weight top for summer",image:"img/womens/summer/crop-top/beautiful-cute-blond-teenager.avif",price:800,rating:4,title:"white T-shirt top"}
-   ,{id:6,description:"pink sweater like top",image:"img/womens/summer/crop-top/skater-girl-holding-board-neck_23-2147670703.avif",price:400,rating:3,title:"pink top"}
-   ,{id:1,description:"white printed fruit",image:"img/womens/summer/crop-top/attractive-smiling-woman.avif",price:600,rating:3,title:"white top"}
-   ,{id:2,description:"Lorem ipsum dolor sit amet.",image:"img/womens/summer/mini-dress/barefoot-teen-with-yellow-dress_1139-101.avif",price:2600,rating:5,title:"yello mini dress"}
-   ,{id:1,description:"full pleated skirt",image:"img/womens/summer/mini-dress/asian-woman-holding-eco-friendly-mesh-shopper_273443-607.avif",price:2500,rating:3,title:"pleated skirt"}
-   ,{id:8,description:"Lorem ipsum dolor sit amet.",image:"img/womens/summer/mini-dress/portrait-stylish-happy-cute-smiling.avif",price:3000,rating:5,title:"short mini dress"}
-   ,{id:15,description:"Lorem ipsum dolor sit amet.",image:"img/womens/summer/mini-dress/young-girl-with-pink-skirt-posing-with-sung.avif",price:2700,rating:4,title:"pink mini dress"}
-   ,{id:12,description:"Lorem ipsum dolor sit amet.",image:"img/womens/summer/mini-dress/young-caucasian-calm-happy-pretty-woman-with.jpg",price:2500,rating:4,title:"yello mini dress"}
-   ,{id:10,description:"Lorem ipsum dolor sit amet.",image:"img/womens/summer/shorts/young-traveler-sitting-swing_23-2147641181.avif",price:400,rating:4,title:"Gray shorts "}
-   ,{id:1,description:"womens shaded shorts for summer",image:"img/womens/summer/shorts/blonde-girl-standing-street-posing_23-2147652241.avif",price:500,rating:4,title:"shaded shorts"}
-   ,{id:5,description:"Lorem ipsum dolor sit amet.",image:"img/womens/summer/shorts/girl-with-hat-stool_23-2147811532.avif",price:900,rating:5,title:"blue cuted shorts"}
-   ,{id:4,description:"Lorem ipsum dolor sit amet.",image:"img/womens/summer/shorts/female-with-dog-walking-down-street_1301-2396.avif",price:600,rating:4,title:"skiny shorts "}
-   ,{id:9,description:"Lorem ipsum dolor sit amet.",image:"img/womens/summer/shorts/young-fit-fashionably-dressed-asian-woman-shorts-bright-blouse-posing-urban-street_1098-17351.avif",price:900,rating:5,title:"shaded shorts"}
-   ,{id:4,description:"casual wearing hoodie",image:"img/womens/winter/hoodies/full-shot-young-woman-sitting-couch_23-2149359826.avif",price:1500,rating:5,title:"white hoodie"}
-   ,{id:3,description:"chain hoodie with cap",image:"img/womens/winter/hoodies/cute-girl-with-seductive-way-looking_23-2147633746.avif",price:1200,rating:3,title:"gray hoodie"}
-   ,{id:10,description:"Lorem ipsum dolor sit amet.",image:"img/womens/winter/hoodies/portrait-cute-woman-with-long-hair_1153-6133.avif",price:1900,rating:4,title:"dark green hoodie"}
-   ,{id:12,description:"Lorem ipsum dolor sit amet.",image:"img/womens/winter/hoodies/portrait-young-smiling-brunette-model-city-winter-wearing.avif",price:1600,rating:5,title:"pink hoodie"}
-   ,{id:14,description:"Lorem ipsum dolor sit amet.",image:"img/womens/winter/hoodies/smiling-woman-with-beanieposing_23-2148382782.avif",price:1000,rating:5,title:"yellow hoodie"}
+    {id:8,description:"Lorem ipsum dolor sit amet.",productType:"summer wear",image:"img/womens/summer/crop-top/summer-girl-portrait-greens-young.jpg",price:500,rating:3,title:"white half top"}
+   ,{id:5,description:"light weight top for summer",productType:"summer wear",image:"img/womens/summer/crop-top/medium-shot-smiley-woman-wearing-hat_23-2149512428.avif",price:800,rating:4,title:"blue full top"}
+   ,{id:2,description:"light weight top for summer",productType:"summer wear",image:"img/womens/summer/crop-top/beautiful-cute-blond-teenager.avif",price:800,rating:4,title:"white T-shirt top"}
+   ,{id:6,description:"pink sweater like top",productType:"summer wear",image:"img/womens/summer/crop-top/skater-girl-holding-board-neck_23-2147670703.avif",price:400,rating:3,title:"pink top"}
+   ,{id:1,description:"white printed fruit",productType:"summer wear",image:"img/womens/summer/crop-top/attractive-smiling-woman.avif",price:600,rating:3,title:"white top"}
+   ,{id:2,description:"Lorem ipsum dolor sit amet.",productType:"summer wear",image:"img/womens/summer/mini-dress/barefoot-teen-with-yellow-dress_1139-101.avif",price:2600,rating:5,title:"yello mini dress"}
+   ,{id:1,description:"full pleated skirt",productType:"summer wear",image:"img/womens/summer/mini-dress/asian-woman-holding-eco-friendly-mesh-shopper_273443-607.avif",price:2500,rating:3,title:"pleated skirt"}
+   ,{id:8,description:"Lorem ipsum dolor sit amet.",productType:"summer wear",image:"img/womens/summer/mini-dress/portrait-stylish-happy-cute-smiling.avif",price:3000,rating:5,title:"short mini dress"}
+   ,{id:15,description:"Lorem ipsum dolor sit amet.",productType:"summer wear",image:"img/womens/summer/mini-dress/young-girl-with-pink-skirt-posing-with-sung.avif",price:2700,rating:4,title:"pink mini dress"}
+   ,{id:12,description:"Lorem ipsum dolor sit amet.",productType:"summer wear",image:"img/womens/summer/mini-dress/young-caucasian-calm-happy-pretty-woman-with.jpg",price:2500,rating:4,title:"yello mini dress"}
+   ,{id:10,description:"Lorem ipsum dolor sit amet.",productType:"summer wear",image:"img/womens/summer/shorts/young-traveler-sitting-swing_23-2147641181.avif",price:400,rating:4,title:"Gray shorts "}
+   ,{id:1,description:"womens shaded shorts for summer",productType:"summer wear",image:"img/womens/summer/shorts/blonde-girl-standing-street-posing_23-2147652241.avif",price:500,rating:4,title:"shaded shorts"}
+   ,{id:5,description:"Lorem ipsum dolor sit amet.",productType:"summer wear",image:"img/womens/summer/shorts/girl-with-hat-stool_23-2147811532.avif",price:900,rating:5,title:"blue cuted shorts"}
+   ,{id:4,description:"Lorem ipsum dolor sit amet.",productType:"summer wear",image:"img/womens/summer/shorts/female-with-dog-walking-down-street_1301-2396.avif",price:600,rating:4,title:"skiny shorts "}
+   ,{id:9,description:"Lorem ipsum dolor sit amet.",productType:"summer wear",image:"img/womens/summer/shorts/young-fit-fashionably-dressed-asian-woman-shorts-bright-blouse-posing-urban-street_1098-17351.avif",price:900,rating:5,title:"shaded shorts"}
+   ,{id:4,description:"casual wearing hoodie",productType:"winter wear",image:"img/womens/winter/hoodies/full-shot-young-woman-sitting-couch_23-2149359826.avif",price:1500,rating:5,title:"white hoodie"}
+   ,{id:3,description:"chain hoodie with cap",productType:"winter wear",image:"img/womens/winter/hoodies/cute-girl-with-seductive-way-looking_23-2147633746.avif",price:1200,rating:3,title:"gray hoodie"}
+   ,{id:10,description:"Lorem ipsum dolor sit amet.",productType:"winter wear",image:"img/womens/winter/hoodies/portrait-cute-woman-with-long-hair_1153-6133.avif",price:1900,rating:4,title:"dark green hoodie"}
+   ,{id:12,description:"Lorem ipsum dolor sit amet.",productType:"winter wear",image:"img/womens/winter/hoodies/portrait-young-smiling-brunette-model-city-winter-wearing.avif",price:1600,rating:5,title:"pink hoodie"}
+   ,{id:14,description:"Lorem ipsum dolor sit amet.",productType:"winter wear",image:"img/womens/winter/hoodies/smiling-woman-with-beanieposing_23-2148382782.avif",price:1000,rating:5,title:"yellow hoodie"}
 ]
 
 function Womens({cate}){
