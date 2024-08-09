@@ -28,7 +28,7 @@ export default function myprofile() {
 };
 
   return (
-    <section className='pt-10 lg:p-28 mt-10'>
+    <section className='pt-10 lg:p-28 mt-20'>
         <div className='bg-gray-950 p-6'>
           <h1 className='text-3xl text-white font-semibold'>My Acount</h1>
           <div className='p-5'>

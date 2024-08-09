@@ -75,7 +75,7 @@ function CheckOut() {
         const options = {
           key: conf.rezorpayIDKey,
           key_secret:conf.rezorpaySecretKey,
-          amount: parseInt(500) * 100,
+          amount: parseInt((card?price:total)+99) * 100,
           currency: "INR",
           name: "Nexus",
           description: "for testing purpose",
