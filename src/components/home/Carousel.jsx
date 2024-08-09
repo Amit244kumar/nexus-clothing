@@ -1,5 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
-
+import service from '../../appwriteConfig/addToCartConfig'; 
+import { useSelector } from 'react-redux';
+import { ToastContainer,toast } from 'react-toastify';
+import LoadingBar from 'react-top-loading-bar';
+import { useOutletContext } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const cards = [
     {
         id: 1,
@@ -108,11 +113,43 @@ const cards = [
 ];
 
 function Carousel() {
+    const [progress, setProgress] = useState(0)
+    const handleValue=useOutletContext()
     const [isDown, setIsDown] = useState(false);
     const [startX, setStartX] = useState(0);
     const [scrollLeft, setScrollLeft] = useState(0);
     const carouselRef = useRef(null);
+    const status=useSelector(state=>state.auth.status)
+    const userData=useSelector(state=>state.auth.userData)
+    const cartData=useSelector(state=>state.auth.cartData)
+    const addToCart=async (cart)=>{ 
+        if(!status)
+        {
+            toast.error("please login first")
+        }
+        else{
+            for(const c in cartData)   {  
+                if(cartData[c].imageUrl === cart.image){
+                    return 
+                }   
+            }
+            setProgress(50)
+            var finalCart={
+                title:cart.title,
+                description:cart.description?cart.description:"Lorem ipsum dolor sit.",
+                rating:cart.rating,
+                price:String(cart.price),
+                imageUrl:cart.image,
+                quantity:1,
+                userId:userData.$id,
+            }
 
+            await service.add_item(finalCart)  
+            
+            setProgress(100)
+            handleValue(true)
+        }
+    }
     useEffect(() => {
         const handleMouseMove = (e) => {
             if (!isDown) return;
@@ -165,19 +202,22 @@ function Carousel() {
         }
         return stars;
     };
+
     return (
     <>
         <div className='w-fit my-12 m-auto'>
             <h1 className='text-white font-bold text-xl sm:text-3xl'>Our Daily selling Products</h1>
             <hr className='text-white' /> 
         </div>
+    <LoadingBar color='#f11946' progress={progress}  />
+    <ToastContainer />
         <div
             ref={carouselRef}
             onMouseDown={(e) => {
                 setIsDown(true);
                 setStartX(e.pageX - carouselRef.current.offsetLeft);
                 setScrollLeft(carouselRef.current.scrollLeft);
-            }}
+            }} 
             onTouchStart={(e) => {
                 setIsDown(true);
                 setStartX(e.touches[0].pageX - carouselRef.current.offsetLeft);
@@ -188,17 +228,19 @@ function Carousel() {
             onTouchEnd={() => setIsDown(false)}
             className="overflow-hidden scrollbar-hide mb-4 relative px-0.5"
         >
-            <div className="flex gap-4 md:gap-6 lg:gap-8">
+            <div id='parent'  className="flex gap-4 md:gap-6 lg:gap-8">
                 {cards.map((card) => (
                     <div key={card.id} className="flex-none w-60 sm:w-48 md:w-64 snap-center">
                         <div className="bg-white border border-gray-200 rounded-lg overflow-hidden mb-4 shadow-sm">
-                            <img src={card.image} alt={card.title} className="w-full h-80 object-cover" />
+                            <Link to="/product" state={{card}} >
+                               <img  src={card.image} alt={card.title} className="w-full h-80 object-cover" />
+                            </Link>
                             <div className="p-4">
                                 <h3 className="text-lg leading-6 font-bold text-gray-900">{card.title}</h3>
                                 <div className="flex mt-2">{renderStars(card.rating)}</div>
                                 <div className="flex justify-between items-center mt-4">
                                     <span className="text-2xl font-extrabold text-gray-900">Rs {card.price}</span>
-                                    <button 
+                                    <button onClick={()=>{addToCart(card)}}
                                         title='add to cart'
                                         className="cursor-pointer text-white bg-fuchsia-950 hover:bg-fuchsia-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                                     >

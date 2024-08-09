@@ -1,7 +1,9 @@
-import React, { useRef, useState } from 'react'
+import React from 'react'
 import Input from '../components/Input'
+import { useSelector } from 'react-redux'
 function Contact() {
-  
+  const status=useSelector(state=>state.auth.status)
+  const userData=useSelector(state=>state.auth.userData)
   return (
     <>
     <section>
@@ -17,14 +19,16 @@ function Contact() {
     </section>
     <section className='sm:p-8 p-2'>
     <div className='w-full max-w-md m-auto'>
-    <form className='flex flex-col'>
+    <form className='flex flex-col' onSubmit={(e)=>{e.preventDefault()}}>
         <Input
             type="text"
+            value={status?userData.name:""}
             placeholder="Enter Name"
             className="w-full outline-none mb-4 p-2 border border-gray-300 rounded"
         />
         <Input
             type="text"
+            value={status?userData.email:""}
             placeholder="Enter Email"
             className="w-full outline-none mb-4 p-2 border border-gray-300 rounded"
         />

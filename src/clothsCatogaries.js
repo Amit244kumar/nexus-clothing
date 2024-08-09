@@ -5,6 +5,7 @@ const hoodies = [
         title: 'white hoodie',
         description: 'athlete urban hoodie',
         rating: 4,
+        productType:"winter wear",
         price: 1500,
         
     },
@@ -14,6 +15,7 @@ const hoodies = [
         title: 'dark brown hoodie',
         description: 'autumn cozy hoodie',
         rating: 3 ,
+        productType:"winter wear",
         price: 1100,
         
     },
@@ -23,7 +25,8 @@ const hoodies = [
         title: 'dark red hoodie',
         description: 'hoodie cotton SweatShirt',
         rating: 4 ,    
-        price: 1600.98,
+        productType:"winter wear",
+        price: 1600,
         
     },
     {
@@ -31,8 +34,9 @@ const hoodies = [
         image: 'img/mens/winter/Hoodies/full-shot-man-with-electric-scooter-outdoors_23-2149356847.avif',
         title: 'white hoodie',
         description: 'casual waering',
-        rating: 5     , 
-        price: 2300.42,
+        rating: 5, 
+        productType:"winter wear",
+        price: 2300,
         
     },
     {
@@ -41,7 +45,8 @@ const hoodies = [
         title: 'light black hoodie',
         description: 'light clothe hoodie',
         rating: 4,
-        price: 1600.49,
+        productType:"winter wear",
+        price: 1600,
         
     },
     {
@@ -50,6 +55,7 @@ const hoodies = [
         title: 'white black hoodie',
         description: 'two way SweatShirt',
         rating: 4,
+        productType:"winter wear",
         price: 1350,
         
     },
@@ -59,6 +65,7 @@ const hoodies = [
         title: 'light purple hoodie',
         description: 'winter hoodie sweatShirt',
         rating: 5,
+        productType:"winter wear",
         price: 1800,
         
     },
@@ -68,6 +75,7 @@ const hoodies = [
         title: 'Half sleeve white hoodie',
         description: 'long half sleeve hoodie',
         rating: 4,
+        productType:"winter wear",
         price: 1450,
         
     },
@@ -77,6 +85,7 @@ const hoodies = [
         title: 'yellow hoodie',
         description: 'man street wear fashion',
         rating: 5,
+        productType:"winter wear",
         price: 2000,
         
     },
@@ -86,6 +95,7 @@ const hoodies = [
         title: 'dark yellow hoodie',
         description: 'medium shot senior hoodie',
         rating: 4,
+        productType:"winter wear",
         price: 1550,
         
     },
@@ -95,6 +105,7 @@ const hoodies = [
         title: 'teenger hoodie',
         description: 'medium shot teen wear fashion',
         rating: 4,
+        productType:"winter wear",
         price: 1700,
         
     },
@@ -104,6 +115,7 @@ const hoodies = [
         title: 'black hoodie',
         description: 'black man seawring hoodie ',
         rating: 4,
+        productType:"winter wear",
         price: 1560,
         
     },
@@ -113,6 +125,7 @@ const hoodies = [
         title: 'light purple hoodie',
         description: 'Fashion sweatshirt ',
         rating: 2,
+        productType:"winter wear",
         price: 1880,
         
     },
@@ -122,6 +135,7 @@ const hoodies = [
         title: 'hoodie type shirt',
         description: 'man wearing hoodie type shirt',
         rating: 3,
+        productType:"winter wear",
         price: 1180,
         
     },
@@ -131,6 +145,7 @@ const hoodies = [
         title: 'yellow hoodie',
         description: 'printed hoodie ',
         rating: 5,
+        productType:"winter wear",
         price: 1480,
         
     }
@@ -142,6 +157,7 @@ const jacket=[
         title: 'brown jacket',
         description: 'full sleeve jacket',
         rating: 4,
+        productType:"winter wear",
         price: 1000,
         
     },
@@ -151,6 +167,7 @@ const jacket=[
         title: 'green jacket',
         description: 'full sleeve wild jacket with cap',
         rating: 3,
+        productType:"winter wear",
         price: 1500,
         
     },
@@ -160,6 +177,7 @@ const jacket=[
         title: 'light white jacket',
         description: 'winter jacket with cap',
         rating: 5,
+        productType:"winter wear",
         price: 1200,
         
     },
@@ -169,6 +187,7 @@ const jacket=[
         title: 'black jacket ',
         description: 'light weight jacket for running',
         rating: 2,
+        productType:"winter wear",
         price: 1100,
         
     },
@@ -178,6 +197,7 @@ const jacket=[
         title: 'black jacket ',
         description: 'medium shot jacket with light weight',
         rating: 1,
+        productType:"winter wear",
         price: 800,
         
     },
@@ -187,6 +207,7 @@ const jacket=[
         title: 'black jacket ',
         description: 'no sleeve jacket with highneck',
         rating: 5,
+        productType:"winter wear",
         price: 1600,
         
     },
@@ -196,6 +217,7 @@ const jacket=[
         title: 'white jacket',
         description: 'heavy white jacket wiht no sleeve',
         rating: 3,
+        productType:"winter wear",
         price: 900,
         
     }, {
@@ -204,6 +226,7 @@ const jacket=[
         title: 'black jacket wiht no cap ',
         description: 'jacket with chain without cap',
         rating: 3,
+        productType:"winter wear",
         price: 700,
         
     },
@@ -213,6 +236,7 @@ const jacket=[
         title: 'dark shade of brown',
         description: 'Trench coats with long style',
         rating: 5,
+        productType:"winter wear",
         price: 2000,
         
     },
@@ -222,6 +246,7 @@ const jacket=[
         title: 'cotton clothe jacket',
         description: 'black cotton long style jacket',
         rating: 4,
+        productType:"winter wear",
         price: 1500,
         
     },
@@ -231,6 +256,7 @@ const jacket=[
         title: 'white hoodie',
         description: 'athlete urban hoodie',
         rating: 4,
+        productType:"winter wear",
         price: 1500,
         
     },
@@ -240,6 +266,7 @@ const jacket=[
         title: 'jeans jacket',
         description: 'jacket with cap and jean',
         rating: 5,
+        productType:"winter wear",
         price: 1200,
         
     },
@@ -249,6 +276,7 @@ const jacket=[
         title: 'heavy white jacket',
         description: 'jacket with cotton clothe with two color',
         rating: 3,
+        productType:"winter wear",
         price: 1500,
         
     },
@@ -261,6 +289,7 @@ const jeans=[
         title: 'shaded jeans',
         description: 'narrow blue jeans with shades',
         rating: 3,
+        productType:"winter wear",
         price: 700,
         
     },
@@ -270,6 +299,7 @@ const jeans=[
         title: 'black jeans',
         description: 'narrow black jeans with small holes',
         rating: 3,
+        productType:"winter wear",
         price: 1500,
         
     },
@@ -279,6 +309,7 @@ const jeans=[
         title: 'formal jeans ',
         description: 'business fashion casual jeans',
         rating: 5,
+        productType:"winter wear",
         price: 1200,
         
     },
@@ -288,6 +319,7 @@ const jeans=[
         title: 'black jeans ',
         description: 'wide black jeans ',
         rating: 5,
+        productType:"winter wear",
         price: 1200,
         
     },
@@ -297,6 +329,7 @@ const jeans=[
         title: 'blue ',
         description: 'wide blue jeans for kids',
         rating: 5,
+        productType:"winter wear",
         price: 800,
         
     },
@@ -306,6 +339,7 @@ const jeans=[
         title: 'brown jeans ',
         description: 'full  brown shaded jeans',
         rating: 4,
+        productType:"winter wear",
         price: 1000,
         
     },
@@ -315,6 +349,7 @@ const jeans=[
         title: 'light blcak jeans',
         description: 'light black shaded jeans',
         rating: 3,
+        productType:"winter wear",
         price: 900,
         
     }, 
@@ -324,6 +359,7 @@ const jeans=[
         title: 'blue white jeans',
         description: 'jeans with big holes',
         rating: 3,
+        productType:"winter wear",
         price: 1200,
         
     },
@@ -333,6 +369,7 @@ const jeans=[
         title: 'white and blck jeans',
         description: 'narrow jeans white and black',
         rating: 3,
+        productType:"summer wear",
         price: 1000,
         
     },
@@ -342,6 +379,7 @@ const jeans=[
         title: 'blue full jeans',
         description: 'school boy seans',
         rating: 4,
+        productType:"summer wear",
         price: 1500,
         
     },
@@ -351,6 +389,7 @@ const jeans=[
         title: 'casual wear jeans',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 3,
+        productType:"summer wear",
         price: 1200,
         
     },
@@ -360,6 +399,7 @@ const jeans=[
         title: 'jeans light dark',
         description: 'narrow casual jeans with short',
         rating: 3,
+        productType:"summer wear",
         price: 1100,
         
     },
@@ -369,6 +409,7 @@ const jeans=[
         title: 'light brown jeans',
         description: 'narrow jeans with no shaded and holes',
         rating: 4,
+        productType:"summer wear",
         price: 1500,
         
     },
@@ -378,6 +419,7 @@ const jeans=[
         title: 'dark blue jeans',
         description: 'narrow jeans with  shaded and holes',
         rating: 1,
+        productType:"summer wear",
         price: 1300,
         
     },
@@ -388,6 +430,7 @@ const jeans=[
         title: 'white blue jeans',
         description: 'white and blue jeans with narrow ans holes',
         rating: 2,
+        productType:"summer wear",
         price: 1000,
         
     },
@@ -397,6 +440,7 @@ const jeans=[
         title: 'gray jeans',
         description: 'gray light weight jeans',
         rating: 5,
+        productType:"summer wear",
         price: 1600,
         
     }
@@ -409,6 +453,7 @@ const sweater=[
         title: 'high neck sweater',
         description: 'light weight high neck sweater',
         rating: 3,
+        productType:"Winter wear",
         price: 700,
         
     },
@@ -418,6 +463,7 @@ const sweater=[
         title: 'maroon sweater',
         description: 'sweater with heavy weight',
         rating: 3,
+        productType:"Winter wear",
         price: 1500,
         
     },
@@ -427,6 +473,7 @@ const sweater=[
         title: 'old school sweater ',
         description: 'old school fashion',
         rating: 5,
+        productType:"Winter wear",
         price: 1200,
         
     },
@@ -437,6 +484,7 @@ const sweater=[
         title: 'high neck sweater',
         description: 'high neck double shaded sweater',
         rating: 5,
+        productType:"Winter wear",
         price: 800,
         
     },
@@ -446,6 +494,7 @@ const sweater=[
         title: 'heavy sweater',
         description: 'heavy sweater with old school style',
         rating: 3,
+        productType:"Winter wear",
         price: 900,
         
     },
@@ -455,6 +504,7 @@ const sweater=[
         title: 'gray sweater ',
         description: 'gray sweat sweater ',
         rating: 3,
+        productType:"Winter wear",
         price: 500,
         
     },
@@ -464,6 +514,7 @@ const sweater=[
         title: 'lusly sweater',
         description: 'two way shaded sweater',
         rating: 3,
+        productType:"Winter wear",
         price: 900,
         
     }, 
@@ -473,6 +524,7 @@ const sweater=[
         title: 'yellow sweater',
         description: 'narrow casual sweater',
         rating: 3,
+        productType:"Winter wear",
         price: 1000,
         
     },
@@ -482,6 +534,7 @@ const sweater=[
         title: 'white sweater',
         description: 'white narrow sweat sweater',
         rating: 4,
+        productType:"Winter wear",
         price: 1500,
         
     },
@@ -491,6 +544,7 @@ const sweater=[
         title: 'casual wear sweater',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 3,
+        productType:"Winter wear",
         price: 1200,
         
     },
@@ -500,6 +554,7 @@ const sweater=[
         title: 'black dotted sweater',
         description: 'cotton black shaded sweater',
         rating: 3,
+        productType:"Winter wear",
         price: 1100,
         
     },
@@ -509,6 +564,7 @@ const sweater=[
         title: 'white sweater',
         description: 'white expensive sweater',
         rating: 4,
+        productType:"Winter wear",
         price: 1500,
         
     },
@@ -518,6 +574,7 @@ const sweater=[
         title: 'double shaded sweater',
         description: 'high nack sweater of two color',
         rating: 2,
+        productType:"Winter wear",
         price: 1300,
         
     },
@@ -527,6 +584,7 @@ const sweater=[
         title: 'brown old sweater',
         description: 'stylish brown lines sweater',
         rating: 4,
+        productType:"Winter wear",
         price: 1500,
         
     },
@@ -536,6 +594,7 @@ const sweater=[
         title: 'long collar sweater',
         description: 'brown and white collar sweater',
         rating: 2,
+        productType:"Winter wear",
         price: 1000,
         
     },
@@ -545,6 +604,7 @@ const sweater=[
         title: 'sorrento sweater',
         description: 'green shade sweater',
         rating: 5,
+        productType:"Winter wear",
         price: 1600,
     },
     {
@@ -553,6 +613,7 @@ const sweater=[
         title: 'printed sweater',
         description: 'grey printed old sweater',
         rating: 3,
+        productType:"Winter wear",
         price: 1100,
     },
     {
@@ -561,6 +622,7 @@ const sweater=[
         title: 'sweater like hoodie',
         description: 'blue plan hoodie sweater',
         rating: 4,
+        productType:"Winter wear",
         price: 1000,
     },
     {
@@ -569,6 +631,7 @@ const sweater=[
         title: 'sorrento sweater',
         description: 'green shade sweater',
         rating: 5,
+        productType:"Winter wear",
         price: 1600,
     }
 ];
@@ -579,6 +642,7 @@ const shirt=[
         title: 'white shirt',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 3,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -588,6 +652,7 @@ const shirt=[
         title: 'white shirt',
         description: 'Lorem ipsum dolor sit amet',
         rating: 3,
+        productType:"summer wear",
         price: 500,
         
     },
@@ -597,6 +662,7 @@ const shirt=[
         title: 'black shirt ',
         description: 'Lorem ipsum dolor sit amet',
         rating: 5,
+        productType:"summer wear",
         price: 200,
         
     },
@@ -606,6 +672,7 @@ const shirt=[
         title: 'brown',
         description: 'Lorem ipsum dolor sit amet ',
         rating: 3,
+        productType:"summer wear",
         price: 200,
         
     },
@@ -615,6 +682,7 @@ const shirt=[
         title: 'gray shirt',
         description: 'Lorem ipsum dolor sit amet',
         rating: 5,
+        productType:"summer wear",
         price: 8400,
         
     },
@@ -624,6 +692,7 @@ const shirt=[
         title: 'brown shirt',
         description: 'Lorem ipsum dolor sit amet ',
         rating: 3,
+        productType:"summer wear",
         price: 200,
         
     },
@@ -633,6 +702,7 @@ const shirt=[
         title: 'white shirt',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 3,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -644,6 +714,7 @@ const shorts=[
         title: 'black short',
         description: 'light weight short for summer',
         rating: 3,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -653,6 +724,7 @@ const shorts=[
         title: 'khaki shorts ',
         description: 'Lorem ipsum dolor sit amet',
         rating: 3,
+        productType:"summer wear",
         price: 500,
         
     },
@@ -662,6 +734,7 @@ const shorts=[
         title: 'shaded brown short',
         description: 'Lorem ipsum dolor sit amet',
         rating: 5,
+        productType:"summer wear",
         price: 200,
         
     },
@@ -671,6 +744,7 @@ const shorts=[
         title: 'brown shorts with pocket',
         description: 'Lorem ipsum dolor sit amet',
         rating: 3,
+        productType:"summer wear",
         price: 300,
         
     },
@@ -680,6 +754,7 @@ const shorts=[
         title: 'blue short ',
         description: 'jeans type shorts ',
         rating: 5,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -689,6 +764,7 @@ const shorts=[
         title: 'white short ',
         description: 'jeans type shorts',
         rating: 5,
+        productType:"summer wear",
         price: 200,
         
     },
@@ -698,6 +774,7 @@ const shorts=[
         title: 'blue short ',
         description: 'jeans type shorts ',
         rating: 3,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -707,6 +784,7 @@ const shorts=[
         title: 'light white short',
         description: 'light weighted shorts',
         rating: 5,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -716,6 +794,7 @@ const shorts=[
         title: 'blue short ',
         description: 'light weighted jeans type shorts',
         rating: 3,
+        productType:"summer wear",
         price: 200,
         
     },
@@ -725,6 +804,7 @@ const shorts=[
         title: 'Dark Olive Green short',
         description: 'long type shorts',
         rating: 3,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -734,6 +814,7 @@ const shorts=[
         title: 'blue short',
         description: 'Lorem ipsum dolor sit amet',
         rating: 4,
+        productType:"summer wear",
         price: 500,
         
     },
@@ -743,6 +824,7 @@ const shorts=[
         title: 'light green shorts',
         description: 'Lorem ipsum dolor sit amet',
         rating: 2,
+        productType:"summer wear",
         price: 300,
         
     },
@@ -752,6 +834,7 @@ const shorts=[
         title: 'Dark Olive Green short',
         description: 'long type shorts',
         rating: 2,
+        productType:"summer wear",
         price: 200,
         
     },
@@ -761,6 +844,7 @@ const shorts=[
         title: 'khaki shorts',
         description: 'long type shorts',
         rating: 4,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -772,6 +856,7 @@ const Tshirt=[
         title: 'white T-shirt',
         description: 'light weight shirt for summer',
         rating: 3,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -781,6 +866,7 @@ const Tshirt=[
         title: 'white T-shirts ',
         description: 'Lorem ipsum dolor sit amet',
         rating: 3,
+        productType:"summer wear",
         price: 500,
         
     },
@@ -790,6 +876,7 @@ const Tshirt=[
         title: 'blue check T-shirt',
         description: 'Lorem ipsum dolor sit amet',
         rating: 5,
+        productType:"summer wear",
         price: 200,
         
     },
@@ -799,6 +886,7 @@ const Tshirt=[
         title: 'check T-shirts',
         description: 'Lorem ipsum dolor sit amet',
         rating: 3,
+        productType:"summer wear",
         price: 300,
         
     },
@@ -808,6 +896,7 @@ const Tshirt=[
         title: 'white T-shirt',
         description: 'half sleeve t-shirts',
         rating: 5,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -817,6 +906,7 @@ const Tshirt=[
         title: 'design T-shirt ',
         description: 'half sleeve T-shirts',
         rating: 5,
+        productType:"summer wear",
         price: 200,
         
     },
@@ -826,6 +916,7 @@ const Tshirt=[
         title: 'white design T-shirts ',
         description: 'half sleeve T-shirts',
         rating: 3,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -835,6 +926,7 @@ const Tshirt=[
         title: 'black T-shirt',
         description: 'heavy weight shorts',
         rating: 5,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -847,6 +939,7 @@ const croptop=[
         title: 'white top',
         description: 'white printed fruit',
         rating: 3,
+        productType:"summer wear",
         price: 600,
         
     },
@@ -856,6 +949,7 @@ const croptop=[
         title: 'white T-shirt top',
         description: 'light weight top for summer',
         rating: 4,
+        productType:"summer wear",
         price: 800,
         
     },
@@ -865,6 +959,7 @@ const croptop=[
         title: 'colorfull top ',
         description: 'half top for summer',
         rating: 2,
+        productType:"summer wear",
         price: 500,
         
     },
@@ -874,6 +969,7 @@ const croptop=[
         title: 'white Corset top',
         description: 'girl wearing corset top',
         rating: 5,
+        productType:"summer wear",
         price: 2000,
         
     },
@@ -883,6 +979,7 @@ const croptop=[
         title: 'blue full top',
         description: 'light weight top for summer',
         rating: 4,
+        productType:"summer wear",
         price: 800,
         
     },
@@ -892,6 +989,7 @@ const croptop=[
         title: 'pink top',
         description: 'pink sweater like top',
         rating: 3,
+        productType:"summer wear",
         price: 400,
         
     },
@@ -901,6 +999,7 @@ const croptop=[
         title: 'full white top',
         description: 'white full transparent top',
         rating: 3,
+        productType:"summer wear",
         price: 600,
         
     },
@@ -910,6 +1009,7 @@ const croptop=[
         title: 'white half top',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 3,
+        productType:"summer wear",
         price: 500,
         
     },
@@ -919,6 +1019,7 @@ const croptop=[
         title: 'full sleeve top',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"summer wear",
         price: 1000,
         
     },
@@ -928,6 +1029,7 @@ const croptop=[
         title: 'full sleeve top',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"summer wear",
         price: 1000,
         
     },
@@ -937,6 +1039,7 @@ const croptop=[
         title: 'skiny top',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 3,
+        productType:"summer wear",
         price: 300,
     },
     {
@@ -945,6 +1048,7 @@ const croptop=[
         title: 'top like T-shirt',
         description: 'full sleeve top like T-shirt',
         rating: 2,
+        productType:"summer wear",
         price: 200,
     },
 ]
@@ -956,6 +1060,7 @@ const minidress=[
         title: 'pleated skirt',
         description: 'full pleated skirt',
         rating: 3,
+        productType:"summer wear",
         price: 2500,
         
     },
@@ -965,6 +1070,7 @@ const minidress=[
         title: 'yello mini dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"summer wear",
         price: 2600,
         
     },
@@ -974,6 +1080,7 @@ const minidress=[
         title: 'gray mini dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"summer wear",
         price: 2100,
         
     },
@@ -983,6 +1090,7 @@ const minidress=[
         title: 'summer dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 3,
+        productType:"summer wear",
         price: 2000,
         
     },
@@ -992,6 +1100,7 @@ const minidress=[
         title: 'skirt like mini dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 3,
+        productType:"summer wear",
         price: 2300,
         
     },
@@ -1001,6 +1110,7 @@ const minidress=[
         title: 'white mini dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"summer wear",
         price: 2200,
         
     },
@@ -1010,6 +1120,7 @@ const minidress=[
         title: 'skirt printed dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 4,
+        productType:"summer wear",
         price: 1300,
         
     },
@@ -1019,6 +1130,7 @@ const minidress=[
         title: 'short mini dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"summer wear",
         price: 3000,
         
     },
@@ -1028,6 +1140,7 @@ const minidress=[
         title: 'long green dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 4,
+        productType:"summer wear",
         price: 2500,
         
     },
@@ -1037,6 +1150,7 @@ const minidress=[
         title: 'skirt like mini dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 3,
+        productType:"summer wear",
         price: 2300,
         
     },
@@ -1046,6 +1160,7 @@ const minidress=[
         title: 'wide red dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"summer wear",
         price: 2000,
         
     },
@@ -1055,6 +1170,7 @@ const minidress=[
         title: 'yello mini dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 4,
+        productType:"summer wear",
         price: 2500,
         
     },
@@ -1064,6 +1180,7 @@ const minidress=[
         title: 'blue mini dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"summer wear",
         price: 2500,
         
     },
@@ -1073,6 +1190,7 @@ const minidress=[
         title: 'pink mini dress',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 4,
+        productType:"summer wear",
         price: 2700,
         
     },
@@ -1085,6 +1203,7 @@ const WShorts=[
         title: 'shaded shorts',
         description: 'womens shaded shorts for summer',
         rating: 4,
+        productType:"winter wear",
         price: 500,
         
     },
@@ -1094,6 +1213,7 @@ const WShorts=[
         title: 'gray shorts',
         description: 'traveling shorts for womens',
         rating: 5,
+        productType:"winter wear",
         price: 800,
         
     },
@@ -1103,6 +1223,7 @@ const WShorts=[
         title: 'Blue shorts',
         description: 'blue casual shorts',
         rating: 3,
+        productType:"winter wear",
         price: 500,
         
     },
@@ -1112,6 +1233,7 @@ const WShorts=[
         title: 'skiny shorts ',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 4,
+        productType:"winter wear",
         price: 600,
         
     },
@@ -1121,6 +1243,7 @@ const WShorts=[
         title: 'blue cuted shorts',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"winter wear",
         price: 900,
         
     },
@@ -1130,6 +1253,7 @@ const WShorts=[
         title: 'dark blue shorts',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 3,
+        productType:"winter wear",
         price: 400,
         
     },
@@ -1139,6 +1263,7 @@ const WShorts=[
         title: 'Button shorts',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 2,
+        productType:"winter wear",
         price: 500,
         
     },
@@ -1148,6 +1273,7 @@ const WShorts=[
         title: 'light blue shorts',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 4,
+        productType:"winter wear",
         price: 800,
         
     },
@@ -1157,6 +1283,7 @@ const WShorts=[
         title: 'shaded shorts',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"winter wear",
         price: 900,
         
     },
@@ -1166,6 +1293,7 @@ const WShorts=[
         title: 'Gray shorts ',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 4,
+        productType:"winter wear",
         price: 400,
         
     },
@@ -1178,6 +1306,7 @@ const Whoodies=[
         title: 'Gray hoodie',
         description: 'shoulder hole hoodie',
         rating: 5,
+        productType:"winter wear",
         price: 1800,
         
     },
@@ -1187,6 +1316,7 @@ const Whoodies=[
         title: 'white hoodie',
         description: 'oversize women hoodie',
         rating: 5,
+        productType:"winter wear",
         price: 2000,
         
     },
@@ -1196,6 +1326,7 @@ const Whoodies=[
         title: 'gray hoodie',
         description: 'chain hoodie with cap',
         rating: 3,
+        productType:"winter wear",
         price: 1200,
         
     },
@@ -1205,6 +1336,7 @@ const Whoodies=[
         title: 'white hoodie',
         description: 'casual wearing hoodie',
         rating: 5,
+        productType:"winter wear",
         price: 1500,
         
     },
@@ -1214,6 +1346,7 @@ const Whoodies=[
         title: 'dark cyan hoodie',
         description: 'hoodie for sports',
         rating: 3,
+        productType:"winter wear",
         price: 1400,
         
     },
@@ -1223,6 +1356,7 @@ const Whoodies=[
         title: 'black hoodie',
         description: 'casual wearing hoodie',
         rating: 4,
+        productType:"winter wear",
         price: 1500,
         
     },
@@ -1232,6 +1366,7 @@ const Whoodies=[
         title: 'pink hoodie',
         description: 'Cap hoodie for casualy',
         rating: 5,
+        productType:"winter wear",
         price: 10000,
         
     },
@@ -1241,6 +1376,7 @@ const Whoodies=[
         title: 'dark pink hoodie',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 4,
+        productType:"winter wear",
         price: 500,
         
     },
@@ -1250,6 +1386,7 @@ const Whoodies=[
         title: 'green hoodie',
         description: 'green printed hoodie',
         rating: 5,
+        productType:"winter wear",
         price: 1200,
         
     },
@@ -1259,6 +1396,7 @@ const Whoodies=[
         title: 'dark green hoodie',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 4,
+        productType:"winter wear",
         price: 1900,
         
     },
@@ -1268,6 +1406,7 @@ const Whoodies=[
         title: 'ligh pink hoodie',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"winter wear",
         price: 2000,
         
     },
@@ -1277,6 +1416,7 @@ const Whoodies=[
         title: 'pink hoodie',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"winter wear",
         price: 1600,
         
     },
@@ -1286,6 +1426,7 @@ const Whoodies=[
         title: 'gray hoodie',
         description: 'long gray hoodie with cap',
         rating: 3,
+        productType:"winter wear",
         price: 1500,
         
     },
@@ -1295,6 +1436,7 @@ const Whoodies=[
         title: 'yellow hoodie',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"winter wear",
         price: 1000,
         
     },
@@ -1304,10 +1446,144 @@ const Whoodies=[
         title: 'gray hoodie',
         description: 'Lorem ipsum dolor sit amet.',
         rating: 5,
+        productType:"winter wear",
         price: 1900,
         
     },
 
 
 ] 
-export {hoodies,jacket,jeans,sweater,shirt,shorts,Tshirt,croptop,minidress,WShorts,Whoodies}
+//both categories
+const slides = {
+    "mens":[{
+        imgDesktop: "img/mens/young-friends-having-fun-together_23-2149560756.avif",
+        imgMobile:  "img/mens/young-friends-having-fun-together_23-2149560758.jpg",
+        title1: "",
+        title2: "PARTY FASHION",
+        description: "SAVE UP TO 30% OFF",
+      },
+      {
+        imgDesktop: "img/mens/stylish-african-american-man-posing-with-copy-space_23-2148634101.jpg",
+        imgMobile: "img/mens/african-american-man-looking-thoughtful_23-2148634064.jpg",
+        title1: "",
+        title2: "SUMMER SEASON",
+        description: "SAVE UP TO 20% OFF",
+      },
+      {
+        imgDesktop: "img/mens/model-sitting-front-door-staring-sideways_23-2148248461.jpg",
+        imgMobile: "img/mens/portrait-young-guy-with-coat_23-2148248487.jpg",
+        title1: "",
+        title2: "WINTER SEASON",
+        description: "SAVE UP TO 30% OFF",
+      },],
+    "womens":[
+        {
+            imgDesktop: "img/womens/woman-posing_1303-3773.jpg",
+            imgMobile:  "img/womens/woman-posing_1303-3774.avif",
+            title1: "",
+            title2: "PARTY FASHION",
+            description: "SAVE UP TO 30% OFF",
+          },
+          {
+            imgDesktop: "img/womens/portrait-young-playful-woman-with-desktop-view.avif",
+            imgMobile: "img/womens/full-height-asian-girl-mobile-view.avif",
+            title1: "",
+            title2: "SUMMER SEASON",
+            description: "SAVE UP TO 20% OFF",
+          },
+          {
+            imgDesktop: "img/womens/woman-outside-wooden-desktop-view.jpg",
+            imgMobile: "img/womens/woman-outside-wooden-mobile-view.avif",
+            title1: "",
+            title2: "WINTER SEASON",
+            description: "SAVE UP TO 30% OFF",
+          },
+    ]
+};
+const category=
+  {
+      "mens":[
+          {
+              cat:"hoodies",
+              isAppliedFilter:false
+          },
+          {
+              cat:"shorts",
+              isAppliedFilter:false
+          },
+          {
+              cat:"jeans",
+              isAppliedFilter:false
+          },
+          {
+              cat:"sweater",
+              isAppliedFilter:false
+          },
+          {
+              cat:"shirts",
+              isAppliedFilter:false
+          },
+          {
+              cat:"jacket",
+              isAppliedFilter:false
+          },
+          {
+              cat:"Tshirt",
+              isAppliedFilter:false
+          }
+      ],
+      "womens":[
+          {
+              cat:"Crop Top",
+              isAppliedFilter:false
+          },
+          {
+              cat:"Mini Dress",
+              isAppliedFilter:false
+          },
+          {
+              cat:"shorts",
+              isAppliedFilter:false
+          },
+          {
+              cat:"hoodies",
+              isAppliedFilter:false
+          },
+      ]
+}
+const price=[
+  {
+      rate:{
+          min:100,
+          max:1000
+      },
+      active:false
+  },
+  {
+      rate:{
+          min:1000,
+          max:2000
+      },
+      active:false
+  },
+  {
+      rate:{
+          min:2000,
+          max:3000
+      },
+      active:false
+  },
+  {
+      rate:{
+          min:3000,
+          max:4000
+      },
+      active:false
+  },
+]
+const clothes={
+    "mens":[hoodies,shorts,jeans,sweater,shirt,jacket,Tshirt],
+    "womens":[croptop,minidress,WShorts,Whoodies],
+}
+
+export {hoodies,jacket,jeans,sweater,shirt,shorts,Tshirt,croptop,minidress,WShorts,Whoodies,slides,category,price,clothes}

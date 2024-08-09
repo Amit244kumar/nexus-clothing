@@ -53,6 +53,19 @@ body{
 .border{
   border: 2px solid white;
 }
+.border1{
+  border: 1px solid white;
+}
+
+.wi {
+      width: 718px;
+}
+
+.hei{
+  height: 500px;
+}
+
+
 #bgv{
   
   background-image: url('/img/main/woman-seaside-view.jpg');
@@ -63,7 +76,7 @@ body{
    height: 702px;
 } 
 .sd{
-  height: 529px;
+  height: 498px;
 }
 .mt{
   background-image: url('img/store/clothing-store.jpg');
@@ -142,19 +155,93 @@ input::-webkit-inner-spin-button {
   background-color: rgb(63 66 71 / 79%);
 }
 .scrollable-div::-webkit-scrollbar {
-  width: 12px; /* Width of the entire scrollbar */
+  width: 12px; 
 }
 
 .scrollable-div::-webkit-scrollbar-track {
-  background: #1d1c1c; /* Color of the scrollbar track */
+  background: #1d1c1c; 
 }
 
 .scrollable-div::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color of the scrollbar thumb */
-  border-radius: 20px; /* Rounded corners */
-  border: 0px solid #f1f1f1; /* Padding around the scrollbar thumb */
+  background-color: #888; 
+  border-radius: 20px; 
+  border: 0px solid #f1f1f1; 
 }
 
 .scrollable-div::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Hover color of the scrollbar thumb */
+  background: #555; 
 }
+
+
+.loader {
+  position: relative;
+  left: 45%;
+  width: 160px;
+  height: 160px;
+  border: 4px solid #282828;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.4),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  z-index: 10;
+  background: #212121;
+  border-radius: 50%;
+  border: 2px solid #292929;
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.loader span {
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    -225deg,
+    #ff7402 0%,
+    #ffe700 50%,
+    #fff55e 100%
+  );
+  filter: blur(20px);
+  z-index: -1;
+  animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 588px) {
+  .f1 {
+      width: 421px;
+  }
+}  
+.wid{
+  width:  590px;
+}
+.hvr:hover{
+  background-color: #1d1c1c;
+}
+
+.bb{
+  border-bottom: 1px solid white;
+}
+

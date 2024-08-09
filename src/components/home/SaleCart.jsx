@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
+
 function SaleCart({url,imgUrl,gender}) {
+  const img=useRef(null)
   return (
     <>
         <div className='relative max-w-96 m-6 overflow-hidden'>
             <div className='relative  sm:bg-gray-500 ease-linear duration-500 hover:bg-gray-100 hover:scale-110'>
                 <img
+                   ref={img}
                   src={imgUrl}
                   alt={gender}
                   className='ease-in sm:mix-blend-multiply duration-300 '

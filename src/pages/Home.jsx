@@ -2,6 +2,7 @@ import React from 'react'
 import SaleCart from '../components/home/SaleCart'
 import Carousel from '../components/home/Carousel'
 import Slider from '../components/home/HeaderSlider'
+
 var slides = [
   {
     imgDesktop: "img/main/front-view-woman-posing-with-black-outfit.jpg",
@@ -24,171 +25,12 @@ var slides = [
     title2: "Summer season",
     description: "SAVE UP TO 30% OFF",
   },
-  // Add more slides as needed
+ 
 ];
 
-function Home() {
-  
+function Home(){
   return (
     <>
-      {/* <div className='relative'>
-        <div className='w-full ' style={{height:'40rem'}} > 
-          <div className='absolute overflow-hidden' style={{height:'40rem'}} >
-            <img src="img\main\front-view-woman-posing-with-black-outfit.jpg" alt=""
-              className='sm:block hidden max-w-full '
-            />
-            <img src="img\main\women-mobile-view.jpg" alt=""
-              className='sm:hidden max-w-full '
-            />
-          </div>
-          <div className='relative text-white w-fit m-auto top-64 p-2 bft'>
-              <div className='max-w-5xl text-center'>
-                <h1 className='
-                md:text-3xl 
-                md:font-bold 
-                md:tracking-wide
-                sm:text-xl 
-                sm:font-bold 
-                sm:tracking-normal
-                text-lg'>new collection</h1>
-                <h1 className='
-                md:text-8xl 
-                md:tracking-wide
-                sm:text-5xl 
-                sm:tracking-wide 
-                text-3xl'>WOMEN'S FASHION</h1>
-                <p className='
-                md:text-2xl 
-                md:tracking-widest
-                sm:text-xl 
-                sm:tracking-wide
-                tracking-normal 
-                font-light bt' 
-                >SAVE UP TO 30% OFF</p>
-                <div className='mt-2 w-fit m-auto border-white '> 
-                  <button className='p-3 px-7 rounded-full border-white border-2 btn'>Shop now</button>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div className='absolute w-full left1'>
-          <div className='absolute overflow-hidden' style={{height:'40rem'}} >
-            <img src="img\main\front-view-woman-posing-with-black-outfit.jpg" alt=""
-              className='sm:block hidden max-w-full '
-            />
-            <img src="img\main\women-mobile-view.jpg" alt=""
-              className='sm:hidden max-w-full '
-            />
-          </div>
-          <div className='relative text-white w-fit m-auto top-64 p-2 bft'>
-              <div className='max-w-5xl text-center'>
-                <h1 className='
-                md:text-3xl 
-                md:font-bold 
-                md:tracking-wide
-                sm:text-xl 
-                sm:font-bold 
-                sm:tracking-normal
-                text-lg'>new collection</h1>
-                <h1 className='
-                md:text-8xl 
-                md:tracking-wide
-                sm:text-5xl 
-                sm:tracking-wide 
-                text-3xl'>WOMEN'S FASHION</h1>
-                <p className='
-                md:text-2xl 
-                md:tracking-widest
-                sm:text-xl 
-                sm:tracking-wide
-                tracking-normal 
-                font-light bt' 
-                >SAVE UP TO 30% OFF</p>
-                <div className='mt-2 w-fit m-auto border-white '> 
-                  <button className='p-3 px-7 rounded-full border-white border-2 btn'>Shop now</button>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div className='absolute w-full left2'>
-          <div className='absolute overflow-hidden' style={{height:'40rem'}} >
-            <img src="img\main\front-view-woman-posing-with-black-outfit.jpg" alt=""
-              className='sm:block hidden max-w-full '
-            />
-            <img src="img\main\women-mobile-view.jpg" alt=""
-              className='sm:hidden max-w-full '
-            />
-          </div>
-          <div className='relative text-white w-fit m-auto top-64 p-2 bft'>
-              <div className='max-w-5xl text-center'>
-                <h1 className='
-                md:text-3xl 
-                md:font-bold 
-                md:tracking-wide
-                sm:text-xl 
-                sm:font-bold 
-                sm:tracking-normal
-                text-lg'>new collection</h1>
-                <h1 className='
-                md:text-8xl 
-                md:tracking-wide
-                sm:text-5xl 
-                sm:tracking-wide 
-                text-3xl'>WOMEN'S FASHION</h1>
-                <p className='
-                md:text-2xl 
-                md:tracking-widest
-                sm:text-xl 
-                sm:tracking-wide
-                tracking-normal 
-                font-light bt' 
-                >SAVE UP TO 30% OFF</p>
-                <div className='mt-2 w-fit m-auto border-white '> 
-                  <button className='p-3 px-7 rounded-full border-white border-2 btn'>Shop now</button>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div className='absolute w-full left3'>
-          <div className='absolute overflow-hidden' style={{height:'40rem'}} >
-            <img src="img\main\front-view-woman-posing-with-black-outfit.jpg" alt=""
-              className='sm:block hidden max-w-full '
-            />
-            <img src="img\main\women-mobile-view.jpg" alt=""
-              className='sm:hidden max-w-full '
-            />
-          </div>
-          <div className='relative text-white w-fit m-auto top-64 p-2 bft'>
-              <div className='max-w-5xl text-center'>
-                <h1 className='
-                md:text-3xl 
-                md:font-bold 
-                md:tracking-wide
-                sm:text-xl 
-                sm:font-bold 
-                sm:tracking-normal
-                text-lg'>new collection</h1>
-                <h1 className='
-                md:text-8xl 
-                md:tracking-wide
-                sm:text-5xl 
-                sm:tracking-wide 
-                text-3xl'>WOMEN'S FASHION</h1>
-                <p className='
-                md:text-2xl 
-                md:tracking-widest
-                sm:text-xl 
-                sm:tracking-wide
-                tracking-normal 
-                font-light bt' 
-                >SAVE UP TO 30% OFF</p>
-                <div className='mt-2 w-fit m-auto border-white '> 
-                  <button className='p-3 px-7 rounded-full border-white border-2 btn'>Shop now</button>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div> */}
       <Slider slides={slides} />
       <section className='p-5 w-fit m-auto'>
           <div className='flex flex-wrap justify-center'>
