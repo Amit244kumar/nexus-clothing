@@ -30,21 +30,6 @@ function Header({value,qunt}) {
         setUserData(user)
         setCartData(Array.isArray(carts)?carts:false)
     },[carts])
-    // const quntity=async(cart,e,index)=>{
-    //     var updatedCart={
-    //         title:cart.title,
-    //         description: cart.description?cart.description:"Lorem ipsum dolor sit.",
-    //         rating:cart.rating,
-    //         price:String(cart.price),
-    //         imageUrl:cart.imageUrl,
-    //         quantity:Number(e.target.value),
-    //         userId:userData.$id,
-    //     }
-    //     await service.update_item(cart.$id,updatedCart)
-    //     quantities[index]=e.target.value
-    //     setQuantities(quantities)
-    //     Total()
-    // }
     const deleteItem=async (id,price)=>{
             setProgress(50)
             const s=await service.detele_item(id) 
@@ -74,9 +59,6 @@ function Header({value,qunt}) {
         authService.logout().then(() => {
             setProgress(100);
             dispatch(logout());
-            // status=false
-            // Navigate('/')
-            // toast.success("You have successfully logged out");
         })
     }
     
@@ -164,7 +146,6 @@ function Header({value,qunt}) {
                     <NavLink className='md:p-3 lg:p-4 p-2 m-1 text-center rounded-xl border-b-2 ' onClick={()=>header.current.style.top="-248px"}  to='/' style={({ isActive }) => isActive ? { background:"rgba(255, 255, 255, 0.1) none repeat scroll 0 0" } : undefined}>Home</NavLink>
                     <NavLink className='md:p-3 lg:p-4 p-2 m-1 text-center rounded-xl border-b-2'  onClick={()=>header.current.style.top="-248px"} to='/mens'  style={({ isActive }) => isActive ? { background:"rgba(255, 255, 255, 0.1) none repeat scroll 0 0" } : undefined}  >Mens</NavLink>
                     <NavLink className='md:p-3 lg:p-4 p-2 m-1 text-center rounded-xl border-b-2 '  onClick={()=>header.current.style.top="-248px"} to='/womens' style={({ isActive }) => isActive ? { background:"rgba(255, 255, 255, 0.1) none repeat scroll 0 0" } : undefined} >Womens</NavLink>
-                    {/* <NavLink className='md:p-3 lg:p-4 p-2 m-1 text-center rounded-xl border-b-2'  >About</NavLink> */}
                     <NavLink className='md:p-3 lg:p-4 p-2 m-1 text-center rounded-xl border-b-2'  onClick={()=>header.current.style.top="-248px"} to='/contact'style={({ isActive }) => isActive ? { background:"rgba(255, 255, 255, 0.1) none repeat scroll 0 0" } : undefined}  >Contact</NavLink>
                 </div>
         </div>

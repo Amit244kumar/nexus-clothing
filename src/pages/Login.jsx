@@ -34,7 +34,6 @@ function Login() {
             dispatch(login({cartData:null,userData:userData}))
           }  
           Navigate('/')
-          // toast.success("you have successfully login")
         }
     } catch (error) {
       setProgress(100)

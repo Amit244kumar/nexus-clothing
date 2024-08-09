@@ -44,7 +44,7 @@ function App() {
     return (
       <>
         
-       <Header value={value} qunt={a} name={name} />
+       <Header value={value} qunt={a}  />
        <Outlet context={f1} />
        <Footer />
       </>

@@ -30,7 +30,7 @@ function Register() {
               dispatch(login({cartData:null,userData:userData,orderItems:null}))
                setProgress(100)
             }
-            Navigate('/', {name:data.name})
+            Navigate('/')
           }
       } catch (error){
          toast.error("something went wrong")   
