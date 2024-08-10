@@ -147,6 +147,9 @@ function Mens({cate}){
       <LoadingBar color='#f11946' progress={progress}  />
       <ToastContainer />
       <section className='py-3 m-3'>
+            <div  className='m-2 lg:hidden '>
+                <i onClick={()=>{filterELe.current.style.left="0px" }} class="fa-solid fa-filter w-fit text-white text-2xl"></i>
+            </div>
         <div ref={filterELe} className='lg:hidden w-64 p-1 pl-5 duration-500 bg-black h-full z-10 fixed top-0 -left-64'>
             <div onClick={()=>{filterELe.current.style.left="-256px"}} className='w-full mt-1'>
                 <h1 className='float-right mr-1'><i class="fa-solid fa-x text-2xl text-white" ></i></h1>
@@ -177,9 +180,7 @@ function Mens({cate}){
             </div>
         </div>
         <div className='sm:px-8 flex justify-center lg:justify-between w-full'>
-            <div  className='m-2 lg:hidden '>
-                <i onClick={()=>{filterELe.current.style.left="0px" }} class="fa-solid fa-filter w-fit text-white text-2xl"></i>
-            </div>
+            
             <div className='max-w-72 lg:sticky lg:top-10 h-fit p-3 lg:block hidden fixed'>
                 <div className='w-full'>    
                     <h1 className='text-white w-32 text-4xl mb-3'>Category</h1>
@@ -212,7 +213,6 @@ function Mens({cate}){
                     <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:gap-x-8">
                         {cart.map((card,index)=>(
                             <div className="" key={index}>
-                                
                                 <Link to='/product' state={{card}} >
                                     <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md
                                     bg-gray-200 lg:aspect-none hover:opacity-75 lg:h-80">
