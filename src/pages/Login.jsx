@@ -13,6 +13,7 @@ function Login() {
   const {register,handleSubmit}=useForm()
   const [progress, setProgress] = useState(0)
   const [error,setError]=useState("")
+  const [loading,setLoading]=useState(false)
   const dispatch=useDispatch()
   const status=useSelector(state=>state.auth.status)
   const Navigate=useNavigate()
@@ -25,20 +26,24 @@ function Login() {
     setError("")
     try{
         setProgress(progress+10)
+        setLoading(true)
         const session=await authService.login(data)
         if(session){
           setProgress(progress+60)
           const userData=await authService.getCurrentUser() 
           if(userData){
             setProgress(100)
+            setLoading(false)
             dispatch(login({cartData:null,userData:userData}))
           }  
           Navigate('/')
         }
     } catch (error) {
       setProgress(100)
+      setLoading(false)
       setError(error.message)
     }
+    
   }
   return (
     <section className='w-fit m-auto flex items-center h-screen '>
@@ -68,11 +73,19 @@ function Login() {
                   })}
               />
               <p className=' text-red-600 w-fit m-auto'>{error}</p>
-              <Input
-                  type="submit"
-                  className="p-2 bg-blue-600 hover:bg-blue-800 duration-500 text-white cursor-pointer w-full text-center rounded-3xl"
-                  value="login"
-              />
+              {
+                loading?(
+                  <div class="flex flex-row gap-2 justify-center ml-3  p-3  w-11/12 bg-blue-900 cursor-wait text-center rounded-3xl">
+                      <div class="w-3 h-3 rounded-full bg-blue-100 animate-bounce [animation-delay:.7s]"></div>
+                      <div class="w-3 h-3 rounded-full bg-blue-100 animate-bounce [animation-delay:.3s]"></div>
+                      <div class="w-3 h-3 rounded-full bg-blue-100 animate-bounce [animation-delay:.7s]"></div>
+                  </div>):(
+                    <Input
+                      type="submit"
+                      className="p-2 bg-blue-600 hover:bg-blue-800 duration-500 text-white cursor-pointer w-full text-center rounded-3xl"
+                      value="login"
+                    />)
+              }
           </form>  
           <h1 className='m-auto w-fit text-lg'>Create new account! <Link to='/register' className='font-semibold hover:text-blue-50'>Register</Link></h1>
         </div> 

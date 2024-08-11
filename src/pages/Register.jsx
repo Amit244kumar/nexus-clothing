@@ -15,12 +15,14 @@ function Register() {
   const { register, handleSubmit } = useForm();
   const dispatch=useDispatch()
   const Navigate=useNavigate()
+  const [loading,setLoading]=useState(false)
   const [errr,setError]=useState("")
   
   const create =async (data) => {
       try {
         setError("")
         setProgress(progress+10)
+        setLoading(true)
           const session=await authService.createAccount(data);
           if(session)
           {
@@ -29,13 +31,15 @@ function Register() {
             if(userData) {
               dispatch(login({cartData:null,userData:userData,orderItems:null}))
                setProgress(100)
+               setLoading(false)
             }
             Navigate('/')
           }
       } catch (error){
          toast.error("something went wrong")   
-         setProgress(progress+90)
-        setError(error.message)
+         setProgress(100)
+         setLoading(false)
+         setError(error.message)
       }
   
   };
@@ -76,11 +80,19 @@ function Register() {
             })}
           />
           <p className='w-full m-auto text-red-700'>{errr}</p>
-          <Input
-            type="submit"
-            className="p-2 bg-blue-600 outline-none hover:bg-blue-800 duration-500 text-white cursor-pointer w-full text-center rounded-3xl"
-            value="register"
-          />
+          {
+                loading?(
+                  <div class="flex flex-row gap-2 justify-center ml-3  p-3  w-11/12 bg-blue-900 cursor-wait text-center rounded-3xl">
+                      <div class="w-3 h-3 rounded-full bg-blue-100 animate-bounce [animation-delay:.7s]"></div>
+                      <div class="w-3 h-3 rounded-full bg-blue-100 animate-bounce [animation-delay:.3s]"></div>
+                      <div class="w-3 h-3 rounded-full bg-blue-100 animate-bounce [animation-delay:.7s]"></div>
+                  </div>):(
+                    <Input
+                    type="submit"
+                    className="p-2 bg-blue-600 outline-none hover:bg-blue-800 duration-500 text-white cursor-pointer w-full text-center rounded-3xl"
+                    value="register"
+                  />)
+              }
         </form>
         <ToastContainer />
         <h1 className='m-auto w-fit text-lg'>Have an account already? <Link to='/login' className='font-semibold hover:text-blue-50'>Login</Link></h1>
