@@ -169,7 +169,7 @@ function CheckOut() {
                             <h1 className='sm:text-2xl'>Contact</h1>
                             { !status &&  <Link to="/login"><p className='underline'>Log in</p></Link>}
                         </div>
-                        <input className='w-full p-2 bg-black border1 text-white outline-none rounded-md' type="email" placeholder='Email' 
+                        <input className='w-full p-2 bg-black border1 text-white outline-none rounded-md' type="email" placeholder='Email*' 
                             onChange={handleChange}
                             value={data.email}
                             required
@@ -184,12 +184,12 @@ function CheckOut() {
                         <h1 className='sm:text-2xl ml-2 '>Delivery</h1>
                         <div className='w-full py-4'>
                             <select  name="" id="" required className='outline-none rounded-md w-full p-2 border1 bg-black'>
-                                <option value="" disabled selected hidden>Country/Region</option>
+                                <option value="" disabled selected hidden>Country/Region*</option>
                                 <option value="India">India</option>
                             </select>
                         </div>
                         <div className='w-full py-4'>
-                            <input type="text"  placeholder='name' className='outline-none rounded-md w-full p-2 border1 bg-black ' 
+                            <input type="text"  placeholder='name*' className='outline-none rounded-md w-full p-2 border1 bg-black ' 
                               value={data.name}
                               onChange={handleChange}
                               required
@@ -197,7 +197,7 @@ function CheckOut() {
                             />
                         </div>
                         <div className='w-full py-4'>
-                            <input type="text" placeholder='address' className='outline-none rounded-md w-full p-2 border1 bg-black '
+                            <input type="text" placeholder='address*' className='outline-none rounded-md w-full p-2 border1 bg-black '
                                onChange={handleChange}
                                value={data.address}
                                required
@@ -208,19 +208,22 @@ function CheckOut() {
                             <input type="text" placeholder='apartment, suite,etc. (optional)' className='outline-none rounded-md w-full p-2 border1 bg-black' />
                         </div>
                         <div className='flex w-full sm:flex-nowrap  flex-wrap'>
-                            <input type="text" className='outline-none rounded-md w-full p-2 m-2 ml-0 mr-0 sm:mr-2 border1 bg-black' placeholder='City' 
+                            <input type="text" className='outline-none rounded-md w-full p-2 m-2 ml-0 mr-0 sm:mr-2 border1 bg-black' 
+                              placeholder='City*' 
                               onChange={handleChange}
                               value={data.city}
                               required
                               name="city"
                             />
-                            <input type="text"className='outline-none rounded-md w-full p-2 m-2 mx-0 sm:mx-2 border1  bg-black'  placeholder='state'
+                            <input type="text"className='outline-none rounded-md w-full p-2 m-2 mx-0 sm:mx-2 border1  bg-black'  
+                               placeholder='state*'
                               onChange={handleChange}
                               value={data.state}
                               required
                               name="state"
                             />
-                            <input type="number" className='outline-none rounded-md w-full p-2 m-2 ml-0 mr-0 sm:mr-2 border1 bg-black'  placeholder='PIN Code'
+                            <input type="number" className='outline-none rounded-md w-full p-2 m-2 ml-0 mr-0 sm:mr-2 border1 bg-black'  
+                              placeholder='PIN Code*'
                               onChange={handleChange}
                               value={data.pincode}
                               required
@@ -233,7 +236,7 @@ function CheckOut() {
                             value={data.phone}
                             required
                             name="phone"
-                            placeholder='Phone'/>
+                            placeholder='Phone*'/>
                         </div>
                         <div className='flex p-2'>
                             <input  type="checkbox" className='rouned-lg mt-1 h-8 w-4 '/>
