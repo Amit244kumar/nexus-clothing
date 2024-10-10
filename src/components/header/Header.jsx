@@ -167,16 +167,16 @@ function Header({value,qunt}) {
             </div>
             <div className='sm:flex max-w-md hidden text-white fcs'>
                 <NavLink className='md:p-3 lg:p-4 p-2 m-1 rounded-xl' to='/' style={({ isActive }) => isActive ? { background:"rgba(255, 255, 255, 0.1) none repeat scroll 0 0" } : undefined}>Home</NavLink>
-                <NavLink className='md:p-3 lg:p-4 p-2 m-1 rounded-xl ' to='/mens' style={({ isActive }) => isActive ? { background:"rgba(255, 255, 255, 0.1) none repeat scroll 0 0" } : undefined} >Mens</NavLink>
-                <NavLink className='md:p-3 lg:p-4 p-2 m-1 rounded-xl' to='/womens' style={({ isActive }) => isActive ? { background:"rgba(255, 255, 255, 0.1) none repeat scroll 0 0" } : undefined}>Womens</NavLink>
-                {/* <NavLink className='md:p-3 lg:p-4 p-2 m-1 rounded-xl' to='/'>About</NavLink> */}
+                <NavLink className='md:p-3 lg:p-4 p-2 m-1 rounded-xl ' to='/mens' style={({ isActive }) => isActive ? { background:"rgba(255, 255, 255, 0.1) none repeat scroll 0 0" } : undefined} >Men</NavLink>
+                <NavLink className='md:p-3 lg:p-4 p-2 m-1 rounded-xl' to='/womens' style={({ isActive }) => isActive ? { background:"rgba(255, 255, 255, 0.1) none repeat scroll 0 0" } : undefined}>Women</NavLink>
+                
                 <NavLink className='md:p-3 lg:p-4 p-2 m-1 rounded-xl' to='/contact' style={({ isActive }) => isActive ? { background:"rgba(255, 255, 255, 0.1) none repeat scroll 0 0" } : undefined}>Contact</NavLink>
                 <div className='md:p-3 lg:p-4 p-2 m-1 rounded-xl cursor-pointer'>
                 <ShoppingCart size={28} strokeWidth={1.25} onClick={opneCloseCart} />
                 </div>
             </div>
         </div>
-        <div ref={cart} className='bg-black height w-64 sm:w-96  max-w-96 fixed top-0 -right-96 duration-700 '>
+        <div ref={cart} className='bg-black  h-screen w-64 sm:w-96  max-w-96 fixed top-0 -right-96 duration-700 '>
             <div className='flex justify-between m-3 border-b-2 border-black'>
                 <div>
                     <h1 className=' text-2xl sm:text-3xl font-bold text-white'>Add To Cart</h1>
@@ -190,7 +190,7 @@ function Header({value,qunt}) {
                    {cartData.map((item,index)=>(
                     <div key={index} className='flex flex-row justify-between border-t-2 p-1 px-3'>
                         <div className='flex overflow-auto '>
-                            <div className='w-28 overflow-hidden'> 
+                            <div className='w-24 overflow-hidden'> 
                                 <img src={item.imageUrl} alt="" className='rounded-lg'/>   
                             </div> 
                             <div className='m-1 sm:m-2'>
@@ -231,14 +231,14 @@ function Header({value,qunt}) {
                 <p className='text-white font-semibold sm:text-xl'>Rs {subTotal}</p>
             </div>
             }
-            <div className='flex flex-col gap-2 p-3 '>
+            <div className='flex flex-col gap-2 p-1'>
                 <Link to='/mens' onClick={()=>cart.current.style.right="-382px"}>
-                 <div className='group hover:bg-black duration-500 border w-full p-2 text-center bg-white '>
+                 <div className='group hover:bg-black duration-500 border w-full p-1 text-center bg-white '>
                     <button  className='group-hover:text-white duration-500 w-fit m-auto font-bold text-xl text-black ' >Shop Now</button> 
                  </div>
                 </Link>
                 <Link to="/cart" onClick={()=>cart.current.style.right="-382px"} >
-                    <div className='group hover:bg-white  border w-full p-2 text-center duration-500'>
+                    <div className='group hover:bg-white  border w-full p-1 text-center duration-500'>
                       <button  className='w-fit m-auto font-bold text-white group-hover:text-black duration-500 text-xl'>View cart</button>
                     </div>
                 </Link>

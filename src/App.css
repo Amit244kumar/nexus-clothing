@@ -76,13 +76,13 @@ body{
    height: 702px;
 } 
 .sd{
-  height: 498px;
+  height: 428px;
 }
 .mt{
   background-image: url('img/store/clothing-store.jpg');
-  
   background-blend-mode: luminosity;
 }
+
  @media (min-width: 624px) {
   .md{
       

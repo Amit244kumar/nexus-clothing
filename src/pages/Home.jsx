@@ -58,7 +58,7 @@ function Home(){
                         <img src="img/mens/man-wearing-blue-shorts-up.jpg" className='' alt="" />
                         <div className='absolute  inset-0 sm:-z-10 sm:group-hover:z-0 flex  flex-col justify-end items-center bg-black bg-opacity-50 text-white'>
                           <div className='max-w-96 text-center  sm:block justify-around gap-1 flex flex-wrap  lg:px-16 lg:mb-10 colletion'>
-                              <p className='text-wrap max-w-28'>shorts for mens</p>
+                              <p className='text-wrap max-w-28'>shorts for men</p>
                               <p className=''><strike className='font-light text-red-700'>800Rs</strike> 500Rs</p>
                               <div className='w-fit m-auto'>
                                  <hr className='w-28 hidden sm:block'/>
