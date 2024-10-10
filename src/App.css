@@ -90,6 +90,11 @@ body{
   }
 } 
 
+@media (max-width: 768px) {
+  .sd{
+    height: 500px;
+  }
+}
 .carousel {
   display: flex;
   overflow-x: auto;
