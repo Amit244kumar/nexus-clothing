@@ -87,7 +87,7 @@ function Product() {
     <section className=' p-3 lg:p-10 relative top-12 mt-24'>
          <LoadingBar color='#f11946' progress={progress}  />
          <ToastContainer />
-      <div className='flex p-3  lg:px-40 justify-around flex-wrap mb-10'>
+      <div className='flex p-3  lg:px-40 justify-around flex-wrap md:flex-nowrap mb-10'>
         <div className='' >
            <div className='f1  rounded-lg overflow-hidden sticky top-8'>
               <img src={card.image} className='max-w-full' alt="" />
