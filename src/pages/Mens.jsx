@@ -224,7 +224,6 @@ function Mens({cate}){
                                         <div>
                                             <h3 className="text-sm text-gray-700">
                                                 <span className='font-bold'>{card.title}</span>
-                                            
                                             </h3>
                                             <p className="mt-1 text-sm width h-10 text-gray-500">{card.description}</p>
                                         </div>
