@@ -21,9 +21,9 @@ function Footer() {
                     </div>
                 </div>
                 <div className='m-2'>
-                     <h1 className='p-3 color pointer' >Example@gmail.com</h1>
-                     <h1 className='p-3 sm:mt-2 color pointer'>Shadipur Metro station, Delhi</h1>
-                     <h1 className='p-3 sm:mt-3 color pointer'>(+92)32547-63585</h1>
+                     <h1 className='p-3 color pointer' >Shadipur Metro station, Delhi</h1>
+                     <h1 className='p-3 sm:mt-2 color pointer'>(+92)32547-63585</h1>
+                     <h1 className='p-3 sm:mt-3 color pointer'>Example@gmail.com</h1>
                 </div>
             </div>
         </div>
